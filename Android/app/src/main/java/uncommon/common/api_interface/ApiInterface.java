@@ -32,4 +32,7 @@ public interface ApiInterface {
 
     @GET("reserve/{userEmail}")
     Call<Reservation> getReservation(@Path("userEmail") String userEmail);
+
+    @GET("invite/{inviteCode}")
+    Call<Void> getInviteCode(@Path("inviteCode") String inviteCode);
 }

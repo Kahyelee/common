@@ -90,7 +90,6 @@ public class ConfirmReservationActivity extends AppCompatActivity {
                                 "http://52.8.187.167:8000" + reservationClass.getCoverImage().get(0);
                         Picasso.get().load(imageURL).resize(2438, 1600)
                                 .onlyScaleDown().into(classImgView);
-
                         Date date = null;
                         try {
                             date = inputFormat.parse(inputDateStr);
